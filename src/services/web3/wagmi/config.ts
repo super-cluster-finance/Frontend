@@ -20,7 +20,11 @@ const blockExplorerUrl = process.env.NEXT_PUBLIC_BLOCK_EXPLORER_URL || "";
 export const defaultChain = {
   id: chainId,
   name: chainName,
-  nativeCurrency: { name: "Mantle", symbol: "MNT", decimals: 18 },
+  nativeCurrency: {
+    name: process.env.NEXT_PUBLIC_NETWORK_NAME || "",
+    symbol: process.env.NEXT_PUBLIC_CURRENCY || "",
+    decimals: 18,
+  },
   rpcUrls: {
     default: { http: [rpcUrl] },
     public: { http: [rpcUrl] },

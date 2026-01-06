@@ -46,8 +46,8 @@ export default function PrivyClientProvider({ children }: Props) {
     name: chainName,
     network: chainNetwork,
     nativeCurrency: {
-      name: "Mantle",
-      symbol: "MNT",
+      name: process.env.NEXT_PUBLIC_NETWORK_NAME || "",
+      symbol: process.env.NEXT_PUBLIC_CURRENCY || "",
       decimals: 18,
     },
     rpcUrls: {
