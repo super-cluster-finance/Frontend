@@ -1,0 +1,21 @@
+{
+  "name": "Super Cluster",
+  "short_name": "SuperCluster",
+  "description": "Bridge your PT to supported chains with Super Cluster",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/logo-sc.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-sc.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
