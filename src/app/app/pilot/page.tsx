@@ -17,11 +17,17 @@ const PILOT_ASSETS: readonly PilotAsset[] = [
     logo: "/usde.svg",
     category: "Core",
     totalLiquidity: 1420000,
-    pools: 2,
+    pools: 3,
     isactive: true,
     bestFixedAPY: 8.1,
-    marketsCount: 2,
+    marketsCount: 3,
     markets: [
+      {
+        id: "atlas-init",
+        name: "Init Base Yield Pool",
+        tvl: "$520K",
+        apy: "6.8%",
+      },
       {
         id: "atlas-compound",
         name: "Compound Supply Vault",
@@ -49,11 +55,17 @@ const PILOT_ASSETS: readonly PilotAsset[] = [
     logo: "/usde.svg",
     category: "Growth",
     totalLiquidity: 820000,
-    pools: 2,
+    pools: 3,
     isactive: false,
     bestFixedAPY: 14.1,
-    marketsCount: 2,
+    marketsCount: 3,
     markets: [
+      {
+        id: "yieldwave-init",
+        name: "Init Leveraged Strategy",
+        tvl: "$280K",
+        apy: "12.5%",
+      },
       {
         id: "yieldwave-compound",
         name: "Compound Boosted Pools",
@@ -81,11 +93,17 @@ const PILOT_ASSETS: readonly PilotAsset[] = [
     logo: "/usde.svg",
     category: "Defensive",
     totalLiquidity: 2050000,
-    pools: 2,
+    pools: 3,
     isactive: false,
     bestFixedAPY: 5.4,
-    marketsCount: 2,
+    marketsCount: 3,
     markets: [
+      {
+        id: "horizon-init",
+        name: "Init Conservative Pool",
+        tvl: "$730K",
+        apy: "4.9%",
+      },
       {
         id: "horizon-compound",
         name: "Compound Stablecoin Loop",

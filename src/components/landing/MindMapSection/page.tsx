@@ -131,8 +131,23 @@ const initialNodes = [
     },
   },
   {
+    id: "init",
+    position: { x: 500, y: 75 },
+    data: { label: "Init" },
+    ...nodeDefaults,
+    style: {
+      background: "#1e293b",
+      border: "1px solid #0b84ba",
+      borderRadius: "6px",
+      padding: "8px 12px",
+      fontSize: "10px",
+      color: "#e0e7ff",
+      minWidth: "140px",
+    },
+  },
+  {
     id: "compound",
-    position: { x: 500, y: 100 },
+    position: { x: 500, y: 125 },
     data: { label: "Compound" },
     ...nodeDefaults,
     style: {
@@ -147,7 +162,7 @@ const initialNodes = [
   },
   {
     id: "dolomite",
-    position: { x: 500, y: 150 },
+    position: { x: 500, y: 175 },
     data: { label: "Dolomite" },
     ...nodeDefaults,
     style: {
@@ -303,6 +318,13 @@ const initialEdges = [
     style: { stroke: "#0b84ba", strokeOpacity: 2 },
   },
   // Earn sub-branches
+  {
+    id: "e-earn-init",
+    source: "earn",
+    target: "init",
+    animated: true,
+    style: { stroke: "#0b84ba", strokeOpacity: 2 },
+  },
   {
     id: "e-earn-compound",
     source: "earn",
